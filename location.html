@@ -17,7 +17,7 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <!-- <a-curvedimage 
+      <a-curvedimage 
         src="./test.jpeg" 
         height="3.0" 
         radius="5.7" 
@@ -26,15 +26,17 @@
         scale="0.8 0.8 0.8"
         look-at="[gps-camera]"
         gps-entity-place="latitude: 19.149511; longitude: 77.311603;"
-        ></a-curvedimage> -->
-        <a-entity
+        ></a-curvedimage>
+<!--         <a-entity
           position="0 0 0"
           scale="10 10 10"
           rotation="0 0 0"
           gltf-model="https://kirartest.herokuapp.com/car.gltf"
           look-at="[gps-camera]"
+        gps-entity-place="latitude: 19.149511; longitude: 77.311603;"
+          
         gps-entity-place="latitude: 19.190148; longitude: 77.288395;"
-        ></a-entity>
+        ></a-entity> -->
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>
