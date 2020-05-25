@@ -7,6 +7,8 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
   </head>
 
   <body style="margin: 0; overflow: hidden;">
@@ -15,7 +17,7 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-curvedimage 
+      <!-- <a-curvedimage 
         src="./test.jpeg" 
         height="3.0" 
         radius="5.7" 
@@ -24,7 +26,13 @@
         scale="0.8 0.8 0.8"
         look-at="[gps-camera]"
         gps-entity-place="latitude: 19.149511; longitude: 77.311603;"
-        ></a-curvedimage>
+        ></a-curvedimage> -->
+        <a-entity
+          position="0 0.5 0"
+          scale="0.7 0.7 0.7"
+          rotation="0 0 0"
+          gltf-model="https://kirartest.herokuapp.com/car.gltf"
+        ></a-entity>
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>
